@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Psiphon watchdog every 3 minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=3min
+AccuracySec=30s
+Unit=vps-psiphon-watchdog.service
+
+[Install]
+WantedBy=timers.target
